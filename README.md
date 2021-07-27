@@ -1,28 +1,56 @@
 # GithubSearch
 
-Second Independent project for Moringa Core, June 1,2018
+### Author
 
+[Grant Okello]
 
+### Description
 
-## Description
 A single page application for searching github users and repositories. The site uses the Github API to perform searches on Github, and display the results to the users.The website is made using angular js framework, and uses components, custom directives, custom pipes, routing modules and classes to make the finished product.
 
-## Technologies Used
-HTML
 
-BOOTSTRAP
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
-Angular js
+## Development server
 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Known Bugs
+## Code scaffolding
 
-No known bugs so far
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## License
+## Build
 
-Copyright (c) Permission is hereby granted, free of charge, to any person obtaining a copy of this code
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
-contact me for for further help
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Technologies Used
+
+* [HTML5](https://github.com/topics/html5)
+* [CSS](https://github.com/topics/css3)
+* [AngulerCLI]
+* [markdown]
+* [Bootstrap](https://github.com/topics/bootstrap)
+
+## Known Bugs
+* highlight directive property does not work properly
+
+## Contact Information 
+
+If you have any question or contributions, please email me at [jamesgrant964@gmail.com]
+
+## License
+* *MIT License:*
+* Copyright (c) 2019 **James Grant**
