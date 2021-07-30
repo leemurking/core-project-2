@@ -1,51 +1,246 @@
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-/*.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {*/
-    /*background-color: red;*/
-/*}*/
-/*github user repos*/
-.my-repos p {
-    text-indent: 3rem;
-    text-align: left;
-}
-.desc{
-    text-align: left;
-}
-tr {
-    font-size: 16px;
-}
-a:hover {
-    text-decoration: none;
-}
-td a {
-    font-size: 25px;
-}
-
-p {
-    text-indent: 2rem;
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-.col-md-12 {
-    text-align: center;
-}
-.container {
-    margin-top: 2rem;
-}
-
-
-/* profile*/
-img {
-    max-width: 60%;
-    border-radius: 600px;
-}
-.image-right {
-    padding-top: 8rem;
-    text-align: center;
-}
-
-/**/
-
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                /*.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {*/
+                /*background-color: red;*/
+                /*}*/
+                /*github user repos*/
+                
+                .my-repos p {
+                    text-indent: 3rem;
+                    text-align: left;
+                }
+                
+                .desc {
+                    text-align: left;
+                }
+                
+                tr {
+                    font-size: 16px;
+                }
+                
+                a:hover {
+                    text-decoration: none;
+                }
+                
+                td a {
+                    font-size: 25px;
+                }
+                
+                p {
+                    text-indent: 2rem;
+                    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                }
+                
+                .col-md-12 {
+                    text-align: center;
+                }
+                
+                .container {
+                    margin-top: 2rem;
+                }
+                /* profile*/
+                
+                img {
+                    max-width: 60%;
+                    border-radius: 600px;
+                }
+                
+                .image-right {
+                    padding-top: 8rem;
+                    text-align: center;
+                }
+                /**/
+                /* Profile */
+                
+                .logo {
+                    color: #000;
+                    display: block;
+                }
+                
+                .logo span {
+                    color: #1d89b9;
+                }
+                /* .hidden {
+    display: none;
+} */
+                
+                .custom-card {
+                    border-radius: 0;
+                    outline: 0;
+                    border: 0;
+                    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                }
+                
+                .custom-card:hover img {
+                    transform: scale(1.2) rotate(-3deg);
+                    transition: ease-in-out 0.3s;
+                }
+                
+                .custom-card .img-container {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding-top: 75%;
+                    /* Img Aspect Ratio */
+                }
+                
+                .custom-card .img-container img {
+                    transition: ease-in-out 0.3s;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    text-align: center;
+                    width: 100%;
+                    object-fit: cover;
+                    margin: auto;
+                }
+                
+                .custom-card .custom-card-body {
+                    padding: 12px;
+                    border-top: 3px solid #01a0e3;
+                }
+                
+                .custom-card .custom-card-body .card-title {
+                    text-align: left;
+                    margin-bottom: 4px;
+                    font-size: 17px;
+                    font-weight: 500;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                
+                .custom-card .custom-card-body .card-title:after {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    width: 25%;
+                    background-color: #4fc3f4;
+                    margin: 5px 0 2px;
+                }
+                
+                .custom-card .custom-card-body .category {
+                    text-align: left;
+                    font-weight: 700;
+                    color: #a4a4a4;
+                    margin-bottom: 5px;
+                }
+                
+                .custom-card .custom-card-body .text {
+                    text-align: left;
+                    color: #6f6f6f;
+                }
+                
+                .custom-card .custom-card-body .text-overflow {
+                    position: relative;
+                    overflow: hidden;
+                    max-height: 35px;
+                    width: 100%;
+                    line-height: 18px;
+                    display: -webkit-box;
+                    line-clamp: 2;
+                    -webkit-line-clamp: 2;
+                    -o-line-clamp: 2;
+                    box-orient: vertical;
+                    -o-box-orient: vertical;
+                    -webkit-box-orient: vertical;
+                }
+                
+                .body {
+                    background: #ffd89b;
+                    background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
+                    background: linear-gradient(to right, #ffd89b, #19547b);
+                    min-height: 110%;
+                }
+                /* Repos */
+                
+                .card a {
+                    text-decoration: none;
+                }
+                
+                .card {
+                    height: 100%;
+                    width: 110%;
+                    border: 1px solid #38444c;
+                    padding: 1rem;
+                }
+                
+                .card article {
+                    margin-top: 0.5rem;
+                }
+                
+                .card article p {
+                    font-size: 1.15em;
+                }
+                
+                .profile {
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .username {
+                    margin-left: 10px;
+                }
+                
+                .username h4 {
+                    font-size: 0.9rem;
+                }
+                
+                .username span {
+                    color: #566471;
+                    font-size: 0.85rem;
+                }
+                
+                .tweet-info {
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+                    padding: 1rem 0;
+                    border-bottom: 1px solid #38444c;
+                }
+                
+                .tweet-info span {
+                    font-size: 0.85rem;
+                    color: #566471;
+                }
+                
+                .heart {
+                    cursor: pointer;
+                    height: 50px;
+                    width: 50px;
+                    background-image: url("https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png");
+                    background-position: left;
+                    background-repeat: no-repeat;
+                    background-size: 3000%;
+                }
+                
+                .is_animating {
+                    animation: heart-burst 0.8s steps(28) 1;
+                }
+                
+                @keyframes heart-burst {
+                    from {
+                        background-position: left;
+                    }
+                    to {
+                        background-position: right;
+                    }
+                }
+                
+                svg {
+                    height: 20px;
+                    width: 20px;
+                    cursor: pointer;
+                    fill: #566471;
+                }
+                
+                .icons {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }

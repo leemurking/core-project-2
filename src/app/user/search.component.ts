@@ -12,7 +12,7 @@ import {User} from '../user';
 })
 
 export class SearchComponent implements OnInit {
-    public searchMe = 'silikhe';
+    public searchMe = 'leemurking';
     public githubUser: string;
 
     users: User ;
@@ -25,6 +25,7 @@ export class SearchComponent implements OnInit {
         this.githubUser = '';
         this.searchMe  = username;
         this.ngOnInit();
+console.log(this.githubUser)
     }
 
 
