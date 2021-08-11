@@ -62,9 +62,6 @@
                 .logo span {
                     color: #1d89b9;
                 }
-                /* .hidden {
-    display: none;
-} */
                 
                 .custom-card {
                     border-radius: 0;
@@ -154,7 +151,7 @@
                     background: #ffd89b;
                     background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
                     background: linear-gradient(to right, #ffd89b, #19547b);
-                    min-height: 110%;
+                    min-height: 100%;
                 }
                 /* Repos */
                 
@@ -163,9 +160,9 @@
                 }
                 
                 .card {
-                    height: 100%;
-                    width: 110%;
-                    border: 1px solid #38444c;
+                    /* height: 100%; */
+                    /* width: 100%; */
+                    /* border: 1px solid #38444c; */
                     padding: 1rem;
                 }
                 

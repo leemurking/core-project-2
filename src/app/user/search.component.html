@@ -12,10 +12,33 @@
         </div>
     </div>
     <div class="container ">
-        <div class="">
-            <div class="container mt-3 text-center">
+        <div class="row">
+            <div class="container col-md-6 mt-3 text-center">
                 <div class="row -content-center">
-                    <small class="col-12 col-sm-6 col-md-4">
+                    <small class="col- col-sm-6 col-md-8">
+        <div class="card custom-card">
+          <div class="img-container">
+            <img src="https://avatars.githubusercontent.com/u/85164123?v=4"/>
+          </div>
+          <div class="custom-card-body">
+            <h4 class="card-title">
+            leemurking
+            </h4>
+<p>{{users.bio}}</p>
+            <div class="category">
+              Since: {{users.created_at | date}}
+            </div>
+            <div class="text text-overflow">
+               <!-- {{users.bio}} -->
+            </div>
+          </div>
+        </div>
+                    </small>
+                </div>
+            </div>
+            <div class="container col-md-6 mt-3 text-center">
+                <div class="row -content-center">
+                    <small class="col- col-sm-6 col-md-8">
         <div class="card custom-card">
           <div class="img-container">
             <img src="{{users.avatar_url}}"/>
@@ -24,11 +47,12 @@
             <h4 class="card-title">
               {{users.login}}
             </h4>
+<p>{{users.bio}}</p>
             <div class="category">
               Since: {{users.created_at | date}}
             </div>
             <div class="text text-overflow">
-               {{users.description}}
+               <!-- {{users.bio}} -->
             </div>
           </div>
         </div>
@@ -36,6 +60,7 @@
                 </div>
             </div>
         </div>
+
         <div class="container ">
             <div class="row ">
                 <div class="col-md-3 p-3 " *ngFor='let repository of userRepos.newRepository'>
@@ -44,15 +69,17 @@
                             <div class='profile'>
                                 <div class='username'>
                                     <h4>{{repository.owner.login}}</h4>
-                                    <a href='{{repository.owner.html_url}}' target='_blank'> <span>{{repository.owner.email}</span></a>
+                                    <a href='{{repository.owner.html_url}}' target='_blank'>
+                                        <span>{{repository.name}}</span></a>
                                 </div>
                             </div>
                             <article>
 
-                                <p>{{repository.description}}</p>
+                                <span>{{repository.description}}</span>
                             </article>
                             <div class='tweet-info'>
-                                <span></span> <span> {{repository.created_at|date}} </span><span>{{repository.name}}</span>
+                                <span></span> <span> {{repository.created_at|date}} </span>
+                                <span></span>
                             </div>
                             <div class='icons'>
                                 <svg viewBox="0 0 24 24 " aria-hidden="true " class="r-4qtqp9 r-yyyyoo r-50lct3 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue ">
@@ -82,111 +109,9 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 style="color: #056b5b"> User Repositories</h2>
-                        <div class="table table-striped">
-                            <table class="table">
-                                <tbody>
-                                    <tr *ngFor='let repository of userRepos.newRepository'>
-                                        <td>
-                                            <a href="{{repository.html_url}}" target="_blank">{{repository.name}}</a>
 
-                                            <br>
-                                            <p class="desc">Description: {{repository.description}}</p>
-                                            <br>
-                                            <p>Date Created: {{repository.created_at | date}}</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="col-md-6">
-            <app-search-form (getName)='findUser($event)'></app-search-form>
-        </div> -->
     </div>
-    <!-- <div clas s="row">
-        <div class="col-md-7">
-            <div class="table table-striped table-bordered">
-                <h3> {{users.name}}</h3>
-                <table class="table table-striped table-light">
-                    <tbody>
-                        <tr>
-                            <th scope="row">Github Username:</th>
-                            <td> <a href="{{users.html_url}}" target="_blank">{{users.login}}</a></td>
 
-                        </tr>
-                        <tr>
-                            <th scope="row">Repositories:</th>
-                            <td>{{users.public_repos }}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Date created:</th>
-                            <td>{{users.created_at | date}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Followers:</th>
-                            <td>{{users.followers}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Following</th>
-                            <td>{{users.following}}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="col-md-5 image-end">
-            <img src="{{users.avatar_url}}">
-        </div>
-    </div> -->
-    <!-- <div class="container">
-        <article class="card">
-            <div class="card__img-container">
-                <img src="{{users.avatar_url}}" alt="User" class="card__img">
-                <div class="card__img-underlay"></div>
-            </div>
 
-            <div class="card__content">
-                <span class="card__icon fab fa-linkedin"></span>
-                <h3 class="card__title">{{users.html_url}}</h3>
-                <p class="card__desc">">{{users.description}}</p>
-
-                <div class="card__flex">
-                    <span class="card__author">~ ">{{users.login}}</span>
-                    <span class="fa fa-arrow-right"></span>
-                </div>
-            </div>
-        </article>
-    </div> -->
-    <hr>
-    <div class="container mt-3 text-center">
-        <div class="row -content-center">
-            <small class="col-12 col-sm-6 col-md-4">
-        <div class="card custom-card">
-          <div class="img-container">
-            <img src="{{users.avatar_url}}"/>
-          </div>
-          <div class="custom-card-body">
-            <h4 class="card-title">
-              {{users.login}}
-            </h4>
-            <div class="category">
-              Since: {{users.created_at | date}}
-            </div>
-            <div class="text text-overflow">
-               {{users.description}}
-            </div>
-          </div>
-        </div>
-    </small>
-        </div>
-    </div>
 
 </div>

@@ -1,5 +1,5 @@
 input {
-    width: 100%;
+    /* width: 100%; */
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -9,7 +9,7 @@ input {
 }
 
 input[type=submit] {
-    background-color: #056b5b;
+    /* background-color: #056b5b; */
     color: white;
     text-align: center;
     /* width: 50%; */
@@ -29,16 +29,16 @@ button {
 form {
     background-color: #f1f1f1;
     padding: 20px;
-    width: 100vh;
     /*height: 100%; */
 }
 
-.cont {
+
+/* .cont {
     background: #ffd89b;
     background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
     background: linear-gradient(to right, #ffd89b, #19547b);
-    /* min-height: 100vh; */
-}
+    min-height: 100vh;
+} */
 
 .form-control:focus {
     box-shadow: none;
